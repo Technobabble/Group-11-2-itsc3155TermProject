@@ -7,6 +7,10 @@ class CharactersController < ApplicationController
         @character = Character.new
     end
     
+    def show
+        @character = Character.find(params[:id])
+    end
+    
     def create
         @character = Character.new(character_params)
         
@@ -27,9 +31,14 @@ class CharactersController < ApplicationController
         end
     end
     
-    def show
+    def destroy
         @character = Character.find(params[:id])
+        @character.destroy
+        
+        redirect_to characters_path
     end
+    
+    
 end
 
 private
