@@ -1,4 +1,23 @@
 <h1>Your Characters</h1>
-<p><em>//Placeholder character stuff here</em></p>
+<table>
+  <tr>
+    <th>Name</th>
+    <th>Gender</th>
+    <th>Race</th>
+    <th>Class</th>
+    <th>Story</th>
+  </tr>
+ 
+  <% @characters.each do |character| %>
+    <tr>
+      <td><%= character.name %></td>
+      <td><%= character.gender %></td>
+      <td><%= character.race %></td>
+      <td><%= character.charclass %></td>
+      <td><%= character.story %></td>
+      <td><%= link_to 'Show', character_path(character) %></td>
+    </tr>
+  <% end %>
+</table>
 <%= link_to 'New Character', new_character_path %>
 <%= link_to 'Welcome Page', controller: 'welcome' %>
