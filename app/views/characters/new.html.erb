@@ -1,5 +1,6 @@
 <center><br><br><br><img src="https://i.imgur.com/wbbVGlF.png" alt ="New Character"</br></br></br>
 <%= form_for :character, url: characters_path do |f| %>
+<font color="#58F26C">
     <p>
         <h4 id="label">
         <%= f.label :name %>
@@ -8,9 +9,13 @@
     </p>
     
     <p>
+<<<<<<< HEAD
         <h4 id="label">
         <%= f.label :gender %>
         </h4>
+=======
+        <%= f.label :gender %><br>
+>>>>>>> ef78e8a49fb5406dd8b937353c720368335afdd8
         <%= f.text_field :gender %>
     </p>
     
@@ -37,5 +42,6 @@
     <p>
         <%= f.submit %>
     </p>
+</font>
 <% end %>
 <%= link_to 'Back', characters_path %></center>
