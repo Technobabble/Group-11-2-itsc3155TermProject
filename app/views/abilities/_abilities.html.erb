@@ -3,12 +3,16 @@
         <th><strong>Ability Name</strong></th>
         <th><strong>Damage Type</strong></th>
         <th><strong>Description</strong></th>
+        <th><strong>Actions</strong></th>
     </tr>
 <% @character.abilities.each do |ability| %>
     <tr>
         <td><%= ability.name %></td>
         <td><%= ability.damage_type %></td>
         <td><%= ability.description %></td>
+        <td><%= link_to 'Delete', [ability.character, ability],
+                        method: :delete,
+                        data: { confirm: 'Are you sure?'} %></td>
     </tr>
 <% end %>
 </table>
