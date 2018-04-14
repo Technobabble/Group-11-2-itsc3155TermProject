@@ -1,0 +1,14 @@
+<table>
+    <tr>
+        <th><strong>Ability Name</strong></th>
+        <th><strong>Damage Type</strong></th>
+        <th><strong>Description</strong></th>
+    </tr>
+<% @character.abilities.each do |ability| %>
+    <tr>
+        <td><%= ability.name %></td>
+        <td><%= ability.damage_type %></td>
+        <td><%= ability.description %></td>
+    </tr>
+<% end %>
+</table>
