@@ -2,7 +2,6 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
-
 img {
     display: block;
     margin-left: auto;
@@ -11,12 +10,14 @@ img {
 }
 
 
+center {
+    color: #32cd32 ;
+}
 
 h1 {
     font-family: "Trebuchet MS";
     text-align: center;
     font-size: 40px;
-    color: green;
 }
 
 body

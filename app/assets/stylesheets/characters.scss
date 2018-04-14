@@ -2,6 +2,11 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
+#label {
+    font-family: "Trebuchet MS";
+    color: #32cd32;
+}
+
 input[type=text] {
     width: 10%;
     padding: 12px 12px;
@@ -28,6 +33,7 @@ input[type=button], input[type=submit] {
 }
 
 table, th, td {
+    font-family: "Trebuchet MS";
    border: 1px solid black;
 }
 
@@ -36,7 +42,7 @@ table{
 }
 
 th{
-    background-color: #7ace14;
+    background-color: #005000;
 }
 
 .ani_format{

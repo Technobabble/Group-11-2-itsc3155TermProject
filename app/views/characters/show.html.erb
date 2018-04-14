@@ -1,31 +1,31 @@
-<center><p>
+<center><p id="label">
     <strong>Name:</strong>
     <%= @character.name %>
 </p>
 
-<p>
+<p id="label">
     <strong>Gender:</strong>
     <%= @character.gender %>
 </p>
 
-<p>
+<p id="label">
     <strong>Race:</strong>
     <%= @character.race %>
 </p>
 
-<p>
+<p id="label">
     <strong>Class:</strong>
     <%= @character.charclass %>
-</p>
+</p id="label">
 
-<p>
+<p id="label">
     <strong>Story:</strong>
     <%= @character.story %>
 </p>
 
-<h2>Abilities</h2>
+<h2 id="label">Abilities</h2>
 <%= render 'abilities/abilities' %>
 
-<h2>Add an Ability</h2>
+<h2 id="label">Add an Ability</h2>
 <%= render 'abilities/form' %>
 <%= link_to 'Characters', characters_path %></center>
