@@ -23,4 +23,43 @@
     <%= @character.story %>
 </p>
 
-<center><%= link_to 'Characters', characters_path %></center>
+<h2>Abilities</h2>
+<% @character.abilities.each do |ability| %>
+    <p>
+        <strong>Ability Name:</strong>
+        <%= ability.name %>
+    </p>
+    
+    <p>
+        <strong>Damage Type:</strong>
+        <%= ability.damage_type %>
+    </p>
+    
+    <p>
+        <strong>Description:</strong>
+        <%= ability.description %>
+    </p>
+<% end %>
+
+<h2>Add an Ability</h2>
+<%= form_for([@character, @character.abilities.build]) do |f| %>
+    <p>
+        <%= f.label :name %><br>
+        <%= f.text_field :name %>
+    </p>
+    
+    <p>
+        <%= f.label :damage_type %><br>
+        <%= f.text_field :damage_type %>
+    </p>
+    
+    <p>
+        <%= f.label :description %><br>
+        <%= f.text_area :description %>
+    </p>
+    
+    <p>
+        <%= f.submit %>
+    </p>
+<% end %>
+<%= link_to 'Characters', characters_path %></center>
