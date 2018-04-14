@@ -1,4 +1,6 @@
-<center><p>
+<center>
+<font color="#58F26C">
+<p>
     <strong>Name:</strong>
     <%= @character.name %>
 </p>
@@ -22,10 +24,15 @@
     <strong>Story:</strong>
     <%= @character.story %>
 </p>
+</font>
 
+<font color="red">
 <h2>Abilities</h2>
 <%= render 'abilities/abilities' %>
+</font>
 
+<font color="#58F26C">
 <h2>Add an Ability</h2>
 <%= render 'abilities/form' %>
 <%= link_to 'Characters', characters_path %></center>
+</font>
