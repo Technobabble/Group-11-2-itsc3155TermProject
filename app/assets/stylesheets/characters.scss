@@ -26,7 +26,7 @@ textarea {
 input[type=button], input[type=submit] {
     background-color: #f7dec8;
     border: none;
-    color: #7ace14;
+    color: #58F26C;
     padding: 16px 20px;
     text-decoration: none;
     cursor: pointer;
@@ -42,7 +42,7 @@ table{
 }
 
 th{
-    background-color: #005000;
+    background-color: #58F26C;
 }
 
 .ani_format{
@@ -54,4 +54,8 @@ th{
 
 #animations{
     text-align: center;
+}
+
+a, a:hover {
+    color: #58F26C;
 }
