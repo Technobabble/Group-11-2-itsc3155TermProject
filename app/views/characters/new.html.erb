@@ -1,6 +1,19 @@
 <center><br><br><br><img src="https://i.imgur.com/wbbVGlF.png" alt ="New Character"</br></br></br>
 <%= form_for :character, url: characters_path do |f| %>
 <font color="#58F26C">
+    <% if @character.errors.any? %>
+    <div id="error_explanation">
+      <h2>
+        <%= pluralize(@character.errors.count, "error") %> prevented
+        this character from being created:
+      </h2>
+      <ul>
+        <% @character.errors.full_messages.each do |msg| %>
+          <li><%= msg %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
     <p>
         <%= f.label :name %><br>
         <%= f.text_field :name %>
