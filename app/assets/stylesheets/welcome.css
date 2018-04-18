@@ -2,13 +2,16 @@ img {
   display: block;
   margin-left: auto;
   margin-right: auto;
-  width: 50%; }
+  width: 50%;
+  
+}
 
 h1 {
   font-family: "Trebuchet MS";
   text-align: center;
   font-size: 40px;
-  color: #58F26C; }
+  color: #58F26C;
+}
 
 body, html {
   height: 100%;
@@ -17,6 +20,7 @@ body, html {
   /* Center and scale the image nicely */
   background-position: center;
   background-repeat: no-repeat;
-  background-size: cover; }
+  background-size: cover;
+}
 
 /*# sourceMappingURL=welcome.css.map */
