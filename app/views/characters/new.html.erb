@@ -22,8 +22,10 @@
         <%= f.text_field :name %>
     </p>
     
-    <p>
+    <p> 
+        <h4 class="label">
         <%= f.label :gender %><br>
+        </h4>
         <%= f.text_field :gender %>
     </p>
     
@@ -36,13 +38,14 @@
     
     <p>
         <h4 class="label">
-            Class
-                <div class = "ghost">
-                    <%= f.label :charclass %>
-                </div>
+        <div class = text>Class</div></div>
         </h4>
         <%= f.text_field :charclass %>
     </p>
+    
+    <div class = "ghost">
+    <%= f.label :charclass %>
+    </div>
     
     <p>
         <h4 class="label">
