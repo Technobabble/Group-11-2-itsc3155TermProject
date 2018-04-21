@@ -13,5 +13,5 @@ Scenario: As a RPG character generator user I want to navigate from the homepage
   And I should see the "Name" field
   And I should see the "Gender" field
   And I should see the "Race" field
-  #And I should see the "Class" field
+  And I should see the "CharClass" field
   And I should see the "Story" field
