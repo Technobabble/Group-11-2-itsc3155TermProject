@@ -24,7 +24,7 @@ textarea {
 }
 
 input[type=button], input[type=submit] {
-    background-color: #f7dec8;
+    background-color: #383a32;
     border: none;
     color: #58F26C;
     padding: 16px 20px;
@@ -34,7 +34,9 @@ input[type=button], input[type=submit] {
 
 table, th, td {
     font-family: "Trebuchet MS";
-   border: 1px solid black;
+    border: 4px solid #ccc;
+    color: #58F26C;
+
 }
 
 table{
@@ -42,7 +44,7 @@ table{
 }
 
 th{
-    background-color: #58F26C;
+    background-color: #383a32;
 }
 
 .ani_format{
