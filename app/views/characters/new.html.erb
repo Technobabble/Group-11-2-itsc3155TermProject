@@ -1,6 +1,6 @@
 <center class="label"><br><br><br><img src="https://i.imgur.com/wbbVGlF.png" alt ="New Character"</br></br></br>
 
-<%= form_for :character, url: characters_path do |f| %>
+<%= form_for :character, url: characters_path, html: { multipart: true } do |f| %>
     <% if @character.errors.any? %>
     <div id="error_explanation">
       <h2>
@@ -51,6 +51,13 @@
         <%= f.label :story %>
         </h4>
         <%= f.text_area :story %>
+    </p>
+    
+    <p>
+        <h4 class="label">
+        <%= f.label :image %>
+        </h4>
+        <%= f.file_field :image %>
     </p>
     <p>
         <%= f.submit %>
