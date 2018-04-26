@@ -40,6 +40,10 @@
         <%= f.label :image %>
         </h4>
         <%= f.file_field :image %>
+        <% if @character.image.exists? %>
+            <%= f.label :delete_current_image %>
+            <%= f.check_box(:delete_image) %>
+        <% end %>
     </p>
     
     <p>
