@@ -11,14 +11,14 @@ Scenario: As a RPG character generator user I want to navigate from the homepage
   When I click on the "New Character" link
   Then I should be on the "New Character" page
   And I should see the "Name" field
-  Then I enter "Test" into the "Name" field
+  Then I enter "Test 1" into the "Name" field
   And I should see the "Gender" field
-  Then I enter "Test" into the "Gender" field
+  Then I enter "Test 2" into the "Gender" field
   And I should see the "Race" field
-  Then I enter "Test" into the "Race" field
+  Then I enter "Test 3" into the "Race" field
   And I should see the "Charclass" field
-  Then I enter "Test" into the "Charclass" field
+  Then I enter "Test 4" into the "Charclass" field
   And I should see the "Story" field
-  Then I enter "Test" into the "Story" field
+  Then I enter "Test 5" into the "Story" field
   And I should see the "Save Character" button
   Then I should click on the "Save Character" button
