@@ -73,3 +73,8 @@ a, a:hover {
 #error_explanation li {
     list-style-type: none;
 }
+
+.image-size img{
+    max-width: 300px;
+    max-height: 300px;
+}

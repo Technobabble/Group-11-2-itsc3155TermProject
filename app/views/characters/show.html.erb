@@ -2,7 +2,9 @@
 <% if @character.image.exists? %>
 <p class="label">
     <strong>Image</strong>
-    <%= image_tag @character.image.url(:medium) %>
+    <div class = "image-size">
+        <%= image_tag @character.image.url(:medium) %>
+    </div>
 </p>
 <% end %>
 <p class="label">
@@ -38,5 +40,5 @@
 
 <h2 class="label">Add an Ability</h2>
 <%= render 'abilities/form' %>
-<%= link_to 'Characters', characters_path %></center>
+<%= link_to 'Character List', characters_path %></center>
 </font>
